@@ -2,5 +2,5 @@ numpy
 pandas
 streamlit
 pillow
-nltk
 scikit-learn
+nltk
