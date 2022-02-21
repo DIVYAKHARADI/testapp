@@ -84,7 +84,7 @@ def essemble_classify(data,class_to_predict):
   data = shuffle(data, random_state=77)
   num_records = len(data)
   data_train = data[int(0.85 * num_records):]
-  data_test = data[int(0.85 * num_records):]
+  data_test = data[int(0.15 * num_records):]
 
   train_data = [x[0] for x in data_train[['text']].to_records(index=False)]
   train_labels = [x[0] for x in data_train[[class_to_predict]].to_records(index=False)]
